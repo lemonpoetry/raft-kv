@@ -1,5 +1,6 @@
 / *****************基于go实现的分布式kv***********************/    Author： lemonpoetry
 编程环境：Linux环境下
+基于MIT6.824的测试与实验框架进行，lab1a lab1b lab2a lab2b lab2c lab2d lab3a lab4a lab4b
 1.本项目实现了简单的分布式kv存储  和   可分片的分布式shardkv系统
 2.利用Go语言编写，代码相对简洁
 3.想要进行A B C D各部分的测试实验，需要借助tools文件夹中的dslogs和dstest脚本，需要将这两个脚本添加进电脑的环境变量中
