@@ -1,15 +1,1 @@
-/ *****************基于go实现的分布式kv***********************/    Author： lemonpoetry
-编程环境：Linux环境下
-基于MIT6.824的测试与实验框架进行，lab1a lab1b lab2a lab2b lab2c lab2d lab3a lab4a lab4b
-1.本项目实现了简单的分布式kv存储  和   可分片的分布式shardkv系统
-2.利用Go语言编写，代码相对简洁
-3.想要进行A B C D各部分的测试实验，需要借助tools文件夹中的dslogs和dstest脚本，需要将这两个脚本添加进电脑的环境变量中
-4.各个部分能进行日志环境的打印与调试，进行程序逻辑运行无误后进行数据竞态测试(-race)，然后利用测试工具进行多并发的多轮测试
-命令如下：
-a.go test -run Part 		逻辑检查
-b.go test -run Part -race  	针对多线程并发访问的数据竞态测试
-c.Part  -p 30 -n 100 		使用测试工具进行多并发的多轮次测试
-5.输出日志中含有out.txt的为日志调试信息，可以使用dslogs脚本改为3通道进行调试信息展示
-6.shardctrler是进行分片的信息配置情况
 
-如有问题可以发邮件大家一起学习，2907098302@qq.com / rp201917hrl@gmail.com
